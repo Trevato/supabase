@@ -86,15 +86,45 @@ We can transfer the amount as credits to another organization of your choice. Yo
 
 #### What will happen when I exceed the free plan quota?
 
-When you exceed the Free plan quota, we will monitor and notify you about the exceeding limits. It is important to take action at this point. If you continue to exceed the limits without reducing your usage, we will pause your projects. To avoid project pausing, you have two options: reduce your usage or upgrade to a paid plan.
+When you exceed the Free plan quota, we will monitor and notify you about the exceeding limits. It is important to take action at this point. If you continue to exceed the limits without reducing your usage, service restrictions will apply. To avoid service restrictions, you have two options: reduce your usage or upgrade to a paid plan.
 
 #### What will happen when I exceed the Pro plan quota and have the spend cap on?
 
-When you exceed the Pro plan quota, we will monitor and notify you about the exceeding limits. To unblock yourself, you can simply toggle off your spend cap in your [organization’s billing settings](https://supabase.com/dashboard/org/_/billing) to pay for over-usage beyond the Pro plans limits. If you continue to exceed the limits without reducing your usage or turning off the spend cap, we will pause your projects.
+When you exceed the Pro plan quota, we will monitor and notify you about the exceeding limits. To unblock yourself, you can simply toggle off your spend cap in your [organization’s billing settings](https://supabase.com/dashboard/org/_/billing) to pay for over-usage beyond the Pro plans limits. If you continue to exceed the limits without reducing your usage or turning off the spend cap, service restrictions will apply.
 
 #### How do I scale beyond the limits of my Pro plan?
 
 The Pro plan has a spend cap enabled by default to keep costs under control. If you want to scale beyond the plans included quota, ~~simply~~ switch off the spend cap to pay for additional usage beyond the plans included limits. You can toggle the spend cap in the [organization's billing settings](https://supabase.com/dashboard/org/_/billing). Read more about the [spend cap](https://supabase.com/docs/guides/platform/spend-cap).
+
+## Service restrictions
+
+#### When will my services be restricted?
+
+Service restrictions may be applied to your organization in the following cases:
+
+- When you continue to exceed the free plan quota
+- When you continue to exceed the Pro plan quota and have the spend cap enabled
+- When you have overdue invoices
+- When you have an expired credit card
+
+You will receive a notification before service restrictions are applied. However, in some cases, like suspected abuse of our services, restrictions may be applied without prior notice.
+
+#### What types of service restrictions can be applied?
+
+Services can be restricted in the following ways:
+
+- Pausing projects
+- Switching databases to read-only mode
+- Disabling new project launches/transfers
+- Responding with a 402 status code for all API requests
+
+Service restrictions are generally applied to all projects of the organization.
+
+#### How do I remove service restrictions?
+
+To remove service restrictions, you will need to address the issue that caused the restriction. This could be reducing your usage, paying overdue invoices, updating your payment method, or any other issue that caused the restriction. Once the issue is resolved, the restriction will be lifted.
+
+Service restrictions due to usage limits are lifted with the next billing cycle as your quota refills at the beginning of each cycle. You can check when your current billing cycle ends on the [billing page](https://supabase.com/dashboard/org/_/usage) under "Billing Breakdown". If your organization is on the free plan, you can also lift restrictions immediately by [upgrading](https://supabase.com/dashboard/org/_/billing?panel=subscriptionPlan) to Pro.
 
 ## Reports and invoices
 
